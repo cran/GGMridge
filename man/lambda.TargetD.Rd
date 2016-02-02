@@ -1,0 +1,49 @@
+\name{lambda.TargetD}
+\alias{lambda.TargetD}
+\title{ Shrinkage Estimation of a Covariance Matrix Toward an 
+        Identity Matrix }
+\description{Estimation of a weighted average of a 
+             sample covariance (correlation) matrix and 
+             an identity matrix.}
+\usage{ lambda.TargetD(x) }
+\arguments{
+  \item{x}{ Centered data for covariance shrinkage and standardized 
+            data for correlation shrinkage.}
+}
+\value{The estimates of shrinkage intensity.}
+\details{ An analytical approach to the estimate ridge parameter.}
+\references{
+Schafer, J. and Strimmer, K.
+(2005). 
+A shrinkage approach to large-scale covariance matrix estimation 
+and implications for functional genomics. 
+Statistical Applications in Genetics and Molecular Biology, 4, 32.
+
+Ha, M. J. and Sun, W. 
+(2014).
+Partial correlation matrix estimation using ridge penalty followed 
+by thresholding and re-estimation.
+Biometrics, 70, 762--770.
+}
+\author{ Min Jin Ha }
+\examples{
+  ###############################
+  # Simulate data
+  ###############################
+  simulation <- simulateData(G = 100, etaA = 0.02, n = 50, r = 10)
+  dat <- simulation$data[[1L]]
+  stddat <- scale(x = dat, center = TRUE, scale = TRUE)
+
+  shrinkage.lambda <- lambda.TargetD(x = stddat)
+
+  ###############################
+  # the ridge parameter
+  ###############################
+  ridge.lambda <- shrinkage.lambda / (1.0 - shrinkage.lambda)
+
+  ###############################
+  # partial correlation matrix
+  ###############################
+  partial <- solve(cor(dat) + ridge.lambda * diag(ncol(dat)))
+  partial <- -scaledMat(x = partial)
+}

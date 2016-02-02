@@ -1,0 +1,18 @@
+import(MASS,
+       mvtnorm,
+       stats,
+       graphics)
+importFrom("methods", "is")
+export(EM.mixture,
+       getEfronp,
+       ksStat,
+       lambda.cv,
+       lambda.pcut.cv,
+       lambda.pcut.cv1,
+       lambda.TargetD,
+       ne.lambda.cv,
+       R.separate.ridge,
+       scaledMat,
+       simulateData,
+       structuredEstimate,
+       transFisher)

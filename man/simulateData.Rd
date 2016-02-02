@@ -1,0 +1,41 @@
+\name{simulateData}
+\alias{simulateData}
+\title{Generate Simulation Data from a Random Network.}
+\description{ Generate a random network where both the network 
+              structure and the partial correlation coefficients are 
+              random. The data matrices are generated from 
+              multivariate normal distribution with the covariance 
+              matrix corresponding to the network.}
+\usage{ simulateData(G, etaA, n, r, dist = "mvnorm") }
+\arguments{
+  \item{G   }{ The number of variables (vertices) }
+  \item{etaA}{ The proportion of non-null edges among all the 
+               G(G-1)/2 edges.}
+  \item{n   }{ The sample size.}
+  \item{r   }{ The number of replicated G by N data matrices.}
+  \item{dist}{ A function which indicates the distribution of sample. 
+               "mvnorm" is multivariate normal distribution and 
+               "mvt" is multivariate t distribution with df=2. 
+               The default is set by "mvnorm".}
+}
+\value{
+  \item{data           }{ a list, each element containing an n X G
+                          matrix of simulated data.}
+  \item{true.partialcor}{ The partial correlation matrix which the 
+                          datasets are generated from.}
+  \item{truecor.scaled }{ The covariance matrix calculted from the 
+                          partial correlation matrix.}
+  \item{sig.node       }{ The indices of nonzero upper triangle 
+                          elements of partial correlation matrix.}
+}
+\references{
+Schafer, J. and Strimmer, K. 
+(2005). 
+An empirical Bayes approach to inferring large-scale gene 
+association networks. 
+Bioinformatics, 21, 754--764.
+}
+\author{ Min Jin Ha }
+\examples{
+  simulation <- simulateData(G = 100, etaA = 0.02, n = 50, r = 10)
+}

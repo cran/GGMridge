@@ -12,12 +12,12 @@
 \tabular{ll}{
 Package: \tab GGMridge\cr
 Type: \tab Package\cr
-Version: \tab 1.1\cr
-Date: \tab 2016-02-01\cr
+Version: \tab 1.2\cr
+Date: \tab 2022-06-05\cr
 License: \tab  GPL-2 \cr
 }
 }
-\author{Min Jin Ha}
+\author{Min Jin Ha and Shanon T. Holloway}
 \references{
 Ha, M. J. and Sun, W. 
 (2014).

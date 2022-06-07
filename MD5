@@ -1,4 +1,4 @@
-214ac383219b9753305294fc3a45877f *DESCRIPTION
+6fb3442a68594dc48d866e179537f8b3 *DESCRIPTION
 b6aef95429b8c0b4368434247c62547d *NAMESPACE
 b9cdf50b7c0d66bdb8de0a7e0af65864 *R/EM.mixture.R
 4acd5a1e0252b4d9b152710d96d04faf *R/R.separate.ridge.R
@@ -17,7 +17,7 @@ cb5336cea8c82e76ac63d0fb7236b641 *R/scaledMat.R
 93e4a4465d4e543b7c48047d77ea99b9 *R/transFisher.R
 9b5132e4c5c9169bf021ca4522b43aec *R/zzz.R
 3eecd742918427ab31a91b28bbf9ca24 *man/EM.mixture.Rd
-832a612197258a568f4d22a254d97f3c *man/GGMridge-package.Rd
+d27224fde0c36c3e731310d120b67c18 *man/GGMridge-package.Rd
 317cef8eac58a5c5257d96864d878a1c *man/R.separate.ridge.Rd
 35325c6832059bc9cf37d32939f710e8 *man/StructuredEstimate.Rd
 68652363f768d3451c18109b5e87aaa7 *man/getEfronp.Rd

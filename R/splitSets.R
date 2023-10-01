@@ -1,3 +1,5 @@
+#' @noRd
+#' @keywords internal
 splitSets <- function(cv, i, x) {
 
   testindex <- cv[cv[,1L] == i,2L]

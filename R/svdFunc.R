@@ -1,12 +1,13 @@
+#' @noRd
+#' @keywords internal
 svdFunc <- function(x, y, lambda) {
 
   k <- length(lambda)
 
-  Ds <- try(svd(x = x), silent = TRUE)
-  if( is(Ds, "try-error") ) {
-    stop("Unable to obtain singular value decomposition.", 
-         call. = FALSE)
-  }
+  Ds <- tryCatch(svd(x = x), 
+                 error = function(e) {
+                   stop("unable to obtain SVD\n\t", e$message, call. = FALSE)
+                 })
 
   ld <- length(Ds$d)
 
@@ -16,8 +17,6 @@ svdFunc <- function(x, y, lambda) {
   tmp <- drop(Ds$d * rhs) / div
   dim(tmp) <- c(ld, k)
 
-  coef <- Ds$v %*% tmp
-
-  return( coef )
+  Ds$v %*% tmp
 
 }

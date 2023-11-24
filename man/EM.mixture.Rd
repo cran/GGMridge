@@ -19,11 +19,9 @@ density.}
 }
 \value{
 A list object containing
-  \itemize{
     \item{df   }{Estimated degrees of freedom of the null density.}
     \item{eta0 }{Estimated null proportion.}
     \item{iter }{The number of iterations required to reach convergence.}
- }
 }
 \description{
 Estimation of the parameters, null proportion, and 

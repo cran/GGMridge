@@ -18,10 +18,8 @@ separately for each regression.}
 }
 \value{
 A list containing
-\itemize{
    \item{R }{ The partial correlation matrix.}
    \item{lambda.sel }{ The selected tuning parameters for p ridge regressions.}
- }
 }
 \description{
 The partial correlation matrix is estimated by p separate ridge regressions 

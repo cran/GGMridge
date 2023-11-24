@@ -14,11 +14,9 @@ correlation matrix.}
 }
 \value{
 A list containing
-  \itemize{
     \item{R }{The partial correlation matrix.}
     \item{K }{The inverse covariance matrix.}
     \item{RSS }{The residual sum of squares.}
-  }
 }
 \description{
 Estimation of nonzero entries of the partial correlation matrix given zero 

@@ -39,7 +39,6 @@ estimate f0(z).}
 }
 \value{
 A list containing
-  \itemize{
     \item{correctz }{The corrected z values to follow empirically 
                    standard normal distribution.}
    \item{correctp }{The corrected p values using the correct z values.}
@@ -50,7 +49,6 @@ A list containing
    \item{sigma0hat }{The scale parameter for the normal null 
                    distribution.}
    \item{eta }{The estimated null proportion.}
- }
 }
 \description{
 Estimation of empirical null distribution using Efron's central matching.

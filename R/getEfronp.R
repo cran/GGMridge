@@ -19,7 +19,6 @@
 #' @param plotIt TRUE if density plot is to be produced.
 #' 
 #' @returns A list containing
-#'   \itemize{
 #'     \item{correctz }{The corrected z values to follow empirically 
 #'                    standard normal distribution.}
 #'    \item{correctp }{The corrected p values using the correct z values.}
@@ -30,7 +29,6 @@
 #'    \item{sigma0hat }{The scale parameter for the normal null 
 #'                    distribution.}
 #'    \item{eta }{The estimated null proportion.}
-#'  }
 #' @references
 #'   Efron, B. 
 #'   (2004). 

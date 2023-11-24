@@ -18,12 +18,10 @@ regression.}
 }
 \value{
 A list containing
- \itemize{
    \item{lambda }{The selected tuning parameter, which minimizes 
      the prediction error. }
    \item{spe    }{The prediction error for all of the candidate 
      lambda values.}
- }
 }
 \description{
 Choose the tuning parameter of a ridge regression using cross-validation.

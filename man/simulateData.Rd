@@ -22,7 +22,6 @@ The default is set by "mvnorm".}
 }
 \value{
 A list containing
-  \itemize{
     \item{data }{ a list, each element containing an n X G matrix of 
     simulated data.}
     \item{true.partialcor }{ The partial correlation matrix which the 
@@ -31,7 +30,6 @@ A list containing
     partial correlation matrix.}
     \item{sig.node }{ The indices of nonzero upper triangle 
     elements of partial correlation matrix.}
- }
 }
 \description{
 Generate a random network where both the network structure and the partial 

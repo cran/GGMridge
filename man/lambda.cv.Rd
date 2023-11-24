@@ -15,12 +15,10 @@ lambda.cv(x, lambda, fold)
 }
 \value{
 A list containing
-\itemize{
  \item{lambda }{The selected tuning parameter, which minimizes the 
    total prediction errors. }
  \item{spe }{The total prediction error for all the candidate 
    lambda values.}
-}
 }
 \description{
 Choose the tuning parameter of the ridge inverse by minimizing cross 

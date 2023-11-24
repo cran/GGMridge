@@ -9,12 +9,10 @@
 #' @param fold  fold-cross validation used to choose the tuning parameter. 
 #'
 #' @returns A list containing
-#'  \itemize{
 #'    \item{lambda }{The selected tuning parameter, which minimizes 
 #'      the prediction error. }
 #'    \item{spe    }{The prediction error for all of the candidate 
 #'      lambda values.}
-#'  }
 #'  
 #' @references
 #'  Ha, M. J. and Sun, W. 

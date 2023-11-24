@@ -15,7 +15,6 @@
 #'    The default is set by "mvnorm".
 #'    
 #' @returns A list containing
-#'   \itemize{
 #'     \item{data }{ a list, each element containing an n X G matrix of 
 #'     simulated data.}
 #'     \item{true.partialcor }{ The partial correlation matrix which the 
@@ -24,7 +23,6 @@
 #'     partial correlation matrix.}
 #'     \item{sig.node }{ The indices of nonzero upper triangle 
 #'     elements of partial correlation matrix.}
-#'  }
 #'  
 #' @references
 #'  Schafer, J. and Strimmer, K. 

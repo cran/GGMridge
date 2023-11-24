@@ -8,11 +8,9 @@
 #'   correlation matrix.
 #'
 #' @returns A list containing
-#'   \itemize{
 #'     \item{R }{The partial correlation matrix.}
 #'     \item{K }{The inverse covariance matrix.}
 #'     \item{RSS }{The residual sum of squares.}
-#'   }
 #'
 #' @references
 #'  Ha, M. J. and Sun, W. 

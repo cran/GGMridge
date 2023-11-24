@@ -10,10 +10,8 @@
 #' @param verbose TRUE/FALSE; if TRUE, print the procedure.
 #'
 #' @returns A list containing
-#' \itemize{
 #'    \item{R }{ The partial correlation matrix.}
 #'    \item{lambda.sel }{ The selected tuning parameters for p ridge regressions.}
-#'  }
 #'  
 #' @references
 #'    Ha, M. J. and Sun, W. 
